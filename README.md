@@ -1,9 +1,9 @@
-# E-Commerce App
+# News App
 
 A new Flutter project.
 
 ## App Screens
-![e-commerce app](https://user-images.githubusercontent.com/90062803/181311798-e1dc68b1-b9db-4d7d-a0ae-6601987ec8b7.png)
+![news](https://user-images.githubusercontent.com/90062803/195691632-dd8ed51e-65c5-4872-9286-56199ab0497a.png)
 
 
 
