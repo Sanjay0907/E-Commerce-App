@@ -50,6 +50,8 @@ dependencies:
   shimmer: ^2.0.0
   url_launcher: ^6.1.6
   page_transition: ^2.0.9
+  cloud_firestore: ^3.5.1
+  firebase_storage: ^10.3.11
 
 dev_dependencies:
   flutter_test:

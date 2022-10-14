@@ -1,5 +1,7 @@
 import 'package:e_commerce_app/e_commerce_app/view/display_products/display_products.dart';
 import 'package:e_commerce_app/e_commerce_app/view/sign_in.dart';
+import 'package:e_commerce_app/logged_in_users/controller/service/database_services.dart';
+import 'package:e_commerce_app/logged_in_users/logged_in_users.dart';
 import 'package:e_commerce_app/news_app/view/homepage/homepage.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -18,7 +20,8 @@ class SignInLogic extends StatelessWidget {
                 child: CircularProgressIndicator(),
               );
             } else if (snapshot.hasData) {
-              return const NewsScreen();
+              DataBaseServices.saveUserDataOnCloud();
+              return const LoggedInUser();
             } else if (snapshot.hasError) {
               return const Center(
                 child: Text('Error Logging in'),
